@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int giaithua (int n)
+{
+    if (n == 0)
+        return 1;
+    return n * giaithua(n - 1);
+}
+int main()
+{
+    int nu;
+    cout << "Nhap mot so bat ki: ";
+    cin >> nu;
+    cout << "Giai thua cua  " << nu << " la: " << giaithua(nu);
+    return 0;
+}
